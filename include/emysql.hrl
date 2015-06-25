@@ -35,7 +35,7 @@
 	       database :: string(), 
 	       encoding :: utf8 | latin1 | {utf8, utf8_unicode_ci} | {utf8, utf8_general_ci},
 	       available=queue:new() :: queue:queue(), 
-	       locked=gb_trees:empty() :: gb_tree:gb_tree(), 
+	       locked=gb_trees:empty() :: gb_trees:tree(), 
 	       waiting=queue:new() :: queue:queue(), 
 	       start_cmds=[] :: string(), 
 	       conn_test_period=0 :: number(), 
